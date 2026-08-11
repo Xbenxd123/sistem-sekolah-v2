@@ -10,9 +10,9 @@
 
             Induk</a>
 
-        <h1 class="font-display mt-2 text-3xl font-semibold text-[#16213A]">Catat Siswa Baru</h1>
+        <h1 class="font-display mt-2 text-3xl font-semibold text-[#16213A]">Catat Guru Baru</h1>
 
-        <p class="mt-1 text-sm text-slate-500">Isi data untuk mendaftarkan siswa ke buku induk.</p>
+        <p class="mt-1 text-sm text-slate-500">Isi data untuk mendaftarkan guru ke buku induk.</p>
 
     </div>
 
@@ -24,10 +24,10 @@
 
         <div>
 
-            <label for="nis"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIS</label>
+            <label for="nip"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIP</label>
 
-            <input type="text" id="nis" name="nis" placeholder="Contoh: 2024010"
+            <input type="text" id="nip" name="nip" placeholder="Contoh: 198703152024"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
 
         </div>
@@ -40,7 +40,7 @@
 
                 Lengkap</label>
 
-            <input type="text" id="name" name="name" placeholder="Nama lengkap siswa"
+            <input type="text" id="name" name="name" placeholder="Nama lengkap guru"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
 
         </div>
@@ -69,21 +69,11 @@
 
         <div>
 
-            <label for="major"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jurusan</label>
+            <label for="subject"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Mata Pelajaran</label>
 
-            <select id="major" name="major"
-                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
-
-                <option value="">Pilih jurusan</option>
-
-                <option value="">AKL</option>
-
-                <option value="">TKJ</option>
-
-                <option value="">BiD</option>
-
-            </select>
+            <input type="text" id="subject" name="subject" placeholder="Contoh: Mata Pelajaran Yang Diampu"
+                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
 
         </div>
 
@@ -91,11 +81,28 @@
 
         <div>
 
-            <label for="class"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Kelas</label>
+            <label for="phone_number"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">No. Telpon</label>
 
-            <input type="text" id="class" name="class" placeholder="Contoh: X AKL 1"
+            <input type="text" id="phone_number" name="phone_number" placeholder="Contoh: 081234567890"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
+
+        </div>
+
+
+        <div>
+
+            <label for="status"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Status</label>
+
+            <select id="status" name="status"
+                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
+
+                <option value="L">Aktif</option>
+
+                <option value="P">Tidak Aktif</option>
+
+            </select>
 
         </div>
 

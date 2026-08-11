@@ -10,9 +10,9 @@
 
             Induk</a>
 
-        <h1 class="font-display mt-2 text-3xl font-semibold text-[#16213A]">Catat Siswa Baru</h1>
+        <h1 class="font-display mt-2 text-3xl font-semibold text-[#16213A]">Catat Kelas Baru</h1>
 
-        <p class="mt-1 text-sm text-slate-500">Isi data untuk mendaftarkan siswa ke buku induk.</p>
+        <p class="mt-1 text-sm text-slate-500">Isi data untuk mendaftarkan kelas ke buku induk.</p>
 
     </div>
 
@@ -24,23 +24,11 @@
 
         <div>
 
-            <label for="nis"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIS</label>
-
-            <input type="text" id="nis" name="nis" placeholder="Contoh: 2024010"
-                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
-
-        </div>
-
-
-
-        <div>
-
             <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Nama
 
-                Lengkap</label>
+                Kelas</label>
 
-            <input type="text" id="name" name="name" placeholder="Nama lengkap siswa"
+            <input type="text" id="name" name="name" placeholder="XII AKL 1"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
 
         </div>
@@ -49,17 +37,17 @@
 
         <div>
 
-            <label for="gender"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jenis
+            <label for="grade"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Tingkat</label>
 
-                Kelamin</label>
-
-            <select id="gender" name="gender"
+            <select id="grade" name="grade"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
 
-                <option value="L">Laki-laki</option>
+                <option value="L">X</option>
 
-                <option value="P">Perempuan</option>
+                <option value="P">XI</option>
+
+                <option value="P">XII</option>
 
             </select>
 
@@ -72,30 +60,35 @@
             <label for="major"
                 class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jurusan</label>
 
-            <select id="major" name="major"
+            <select id="major_id" name="major_id"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
 
                 <option value="">Pilih jurusan</option>
 
-                <option value="">AKL</option>
+                <option value="">Akuntansi dan Keuangan Lembaga</option>
 
-                <option value="">TKJ</option>
+                <option value="">Teknik Komputer dan Jaringan</option>
 
-                <option value="">BiD</option>
+                <option value="">Bisnis Digital</option>
 
             </select>
 
         </div>
 
-
-
         <div>
 
-            <label for="class"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Kelas</label>
+            <label for="homeroom_teacher"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Wali Kelas</label>
 
-            <input type="text" id="class" name="class" placeholder="Contoh: X AKL 1"
-                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
+            <select id="teacher_id" name="teacher_id"
+                class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
+
+                <option value="">Pilih Wali Kelas</option>
+
+                <option value="">Budi Santoso</option>
+
+                <option value="">Siti Aminah</option>
+            </select>
 
         </div>
 

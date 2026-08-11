@@ -8,10 +8,8 @@ use Illuminate\Http\Request;
 class CreateController extends Controller
 {
     /**
-     * Handle the incoming request.
-     */
-    public function __invoke(Request $request)
-    {
-        return "Menampilkan halaman tambah kelas";
-    }
+     
+Handle the incoming request.*/
+  public function __invoke(Request $request){$title = 'Sistem Sekolah - Menambah Daftar Kelas';
+      return view('classes.create', ['title' => $title,]);}
 }

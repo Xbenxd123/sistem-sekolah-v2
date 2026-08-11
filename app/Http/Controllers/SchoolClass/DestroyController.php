@@ -8,10 +8,8 @@ use Illuminate\Http\Request;
 class DestroyController extends Controller
 {
     /**
-     * Handle the incoming request.
-     */
-    public function __invoke(Request $request, string $id)
-    {
-        return "Menghapus data kelas sekolah ID: {$id}";
-    }
+     
+Handle the incoming request.*/
+  public function __invoke(Request $request, string $id){
+      return "menghapus data kelas sekolah {$id}";}
 }

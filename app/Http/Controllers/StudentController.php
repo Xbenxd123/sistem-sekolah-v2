@@ -13,19 +13,18 @@ class StudentController extends Controller
             [
                 'id' => 1,
                 'nis' => '1001',
-                'name' => 'Biduk biduk dam dam',
+                'name' => 'Budi Ariyanto',
                 'class' => 'XII TKJ 2',
-                'major' => 'TKJ',
+                'major'=> 'TKJ'
             ],
             [
                 'id' => 2,
                 'nis' => '1002',
-                'name' => 'Buahaha Santi',
-                'class' => 'XII TKJ 1',
-                'major' => 'TKJ',
+                'name' => 'Luis',
+                'class' => 'XII TKJ 2',
+                'major'=> 'TKJ'
             ]
         ];
-
         return view('students.index', [
             'title' => $title,
             'students' => $students
@@ -34,42 +33,42 @@ class StudentController extends Controller
 
     public function show(string $id)
     {
-        $title = 'Sistem Sekolah - Detail Siswa';
+        $title = 'Sistem Sekolah - Menampilkan Detail Siswa';
         return view('students.show', [
-            'title' => $title
+            'title' => $title,
         ]);
     }
 
     public function create()
     {
-        $title = 'Sistem Sekolah - Tambah Siswa';
+        $title = 'Sistem Sekolah - Menambah Daftar Siswa';
         return view('students.create', [
-            'title' => $title
+            'title' => $title,
         ]);
     }
-    
 
-     public function edit(string $id)
+    public function edit(string $id)
     {
-        $title = 'Sistem Sekolah - Edit Siswa';
+        $title = 'Sistem Sekolah - Mengubah Daftar Siswa';
         return view('students.edit', [
-            'title' => $title
+            'title' => $title,
         ]);
-    }
+    } 
 
     public function store()
     {
-        return "Menambahkan penambahan data siswa";
+        return "melakukkan penambahan data siswa";
     }
 
     public function update(string $id)
     {
-        return "Melakukan perubahan data siswa {$id}";
+        return "Melakukkan perubahan data siswa {$id}";
     }
 
     public function destroy(string $id)
     {
         return "Menghapus data siswa {$id}";
     }
+
 
 }
