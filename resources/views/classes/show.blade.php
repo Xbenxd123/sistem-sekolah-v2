@@ -4,7 +4,7 @@
 
 @section('content')
 
-<a href="#" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
+<a href="{{ route('classes.index') }}" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
 
     Induk</a>
 
@@ -22,7 +22,7 @@
 
         </div>
 
-        <a href="#"
+        <a href="{{ route('classes.edit', $class->id) }}"
             class="bg-[#16213A] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#26324f]">Ubah</a>
 
     </div>

@@ -6,7 +6,7 @@
 
     <div class="mb-8 border-b border-[#E5E3DB] pb-5">
 
-        <a href="#" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
+        <a href="{{ route('teachers.index') }}" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
 
             Induk</a>
 
@@ -65,7 +65,7 @@
 
         <div>
 
-            <label for="class"
+            <label for="subject"
                 class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Mata Pelajaran</label>
 
             <input type="text" id="subject" name="subject" placeholder="Contoh: Mata Pelajaran Yang Diampu"
@@ -75,10 +75,10 @@
 
         <div>
 
-            <label for="class"
+            <label for="phone"
                 class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">No. Telepon</label>
 
-            <input type="phone_number" id="class" name="phone_number" value="08123456789"
+            <input type="text" id="phone" name="phone" value="08123456789"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
 
         </div>

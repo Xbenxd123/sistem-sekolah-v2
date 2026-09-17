@@ -6,7 +6,7 @@
 
     <div class="mb-8 border-b border-[#E5E3DB] pb-5">
 
-        <a href="" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
+        <a href="{{ route('teachers.index') }}" class="text-xs uppercase tracking-[0.15em] text-slate-400 hover:text-[#A16207]">&larr; Buku
 
             Induk</a>
 
@@ -18,7 +18,7 @@
 
 
 
-    <form action="" method="POST" class="space-y-6 border border-[#E5E3DB] bg-white p-8">
+    <form action="{{ route('teachers.store') }}" method="POST" class="space-y-6 border border-[#E5E3DB] bg-white p-8">
 
 
 

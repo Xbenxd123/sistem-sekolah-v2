@@ -12,8 +12,7 @@
 
             <div>
 
-                <p class="mb-1 text-[11px] uppercase tracking-[0.2em] text-[#A16207]">Tahun Ajaran
-                    2025/2026</p>
+                <p class="mb-1 text-[11px] uppercase tracking-[0.2em] text-[#A16207]">Tahun Ajaran 2025/2026</p>
 
                 <h1 class="font-display text-3xl font-semibold text-[#16213A]">Daftar Guru</h1>
 
@@ -86,22 +85,22 @@
                         </td>
 
                         <td class="px-5 py-4">
-                            <x-status-badge>{{ $teacher['status'] }}</x-status-badge>
+                            <x-status-badge :type="$teacher['status'] == 'Aktif' ? 'ACTIVE' : 'INACTIVE'">
+                            {{ $teacher['status'] }}
+                            </x-status-badge>
                         </td>
 
                         <td class="px-5 py-4">
 
                             <div class="flex justify-end gap-4 text-xs font-medium">
 
-                                <a href="{{ route('teachers.show', ['id' => 1]) }}" class="text-[#16213A] hover:text-[#A16207]">Lihat</a>
+                                <a href="{{ route('teachers.show', $teacher['id']) }}" class="text-[#1G213A] hover:text-[#A1G287]">Lihat</a>
+                                <a href="{{ route('teachers.edit', $teacher['id']) }}" class="text-[#1G213A] hover:text-[#A1G287]">Ubah</a>
 
-                                <a href="{{ route('teachers.edit', ['id' => 1]) }}" class="text-[#16213A] hover:text-[#A16207]">Ubah</a>
-
-                                <form action="" method="POST"
+                                <form action="{{ route('teachers.destroy', $teacher['id']) }}" method="POST"
                                     onsubmit="return confirm('Hapus data guru ini dari buku induk?')">
-
-
-
+                                    @csrf
+                                    @method('DELETE')
                                     <button type="submit" class="text-red-700 hover:text-red-900">Hapus</button>
 
                                 </form>
