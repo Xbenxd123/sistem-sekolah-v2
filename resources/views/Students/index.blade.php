@@ -38,26 +38,31 @@
                             {{ $student['nis'] }}
                         </td>
                         <td class="px-5 py-4 font-medium text-[#16213A]">
-                            {{ $student['name'] }}
+                            {{ $student->name }}
                         </td>
-                        <td class="px-5 py-4">XII AKL 1</td>
                         <td class="px-5 py-4">
-                            {{ $student['major'] }}
+                            {{ $student->class }}
+                        </td>
+                        <td class="px-5 py-4">
+                            {{ $student->major }}
                         </td>
                         <td class="px-5 py-4">
                             <div class="flex justify-end gap-4 text-xs font-medium">
-                                <a href="{{ route('students.show', ['id' => 1]) }}" class="text-[#16213A] hover:text-[#A16207]">Lihat</a>
-                                <a href="{{ route('students.edit', ['id' => 1]) }}" class="text-[#16213A] hover:text-[#A16207]">Ubah</a>
-                                <form action="" method="POST"
+                                <a href="{{ route('students.show', $student->id) }}" class="text-[#16213A] hover:text-[#A16207]">Lihat</a>
+                                <a href="{{ route('students.edit', $student->id) }}" class="text-[#16213A] hover:text-[#A16207]">Ubah</a>
+                                <form action="{{ route('students.destroy', $student->id) }}" method="POST"
                                     onsubmit="return confirm('Hapus data siswa ini dari buku induk?')">
-
+                                    @csrf
+                                    @method('DELETE')
                                     <button type="submit" class="text-red-700 hover:text-red-900">Hapus</button>
                                 </form>
                             </div>
                         </td>
                         </tr>
                     @endforeach
+
                     
+                    @end
                 </tbody>
             </table>
         </div>
