@@ -28,6 +28,11 @@
 
         </nav>
 
+    <form action="{{ route('logout') }}" method="POST">
+
+     @csrf
+    <button type="submit" class="py-2 px-4 bg-amber-800 rounded-lg cursor pointer">Keluar</button>
+    </form>
     </div>
 
     <div class="h-0.5 bg-[#A16207]"></div>
